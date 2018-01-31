@@ -5,7 +5,7 @@ class Item(object):
         self.weight = weight
         self.price = price
 
-class Equipment(object):
+class Inventory(object):
     def __init__(self):
         self.items = {}
     def add_items(self, item):
@@ -14,9 +14,9 @@ class Equipment(object):
         out= '\t'.join('Name','Atk','Arm', 'lb', 'val')
         for item in self.items.values():
             out+= '\n' + '\t'.join([str(x) for x in [item.name, item.attack, item.armor, item.weight, item.price]])
-equipment=Equipment()
+inventory=inventory()
 print("What would you like to do?\n 1.Check Inventory 2.Check Character 3.Equiptment 4. Quit")
 y=input()
 if y=='3':
     Equipment(Item('Sword')
-    print(equipment)
+    print(inventory)
