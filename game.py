@@ -18,5 +18,5 @@ inventory=inventory()
 print("What would you like to do?\n 1.Check Inventory 2.Check Character 3.Equiptment 4. Quit")
 y=input()
 if y=='3':
-    Equipment(Item('Sword')
+    Inventory(Item('Sword')
     print(inventory)
